@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <span>
+            <input type="text" id="newTask" placeholder="Informe uma tarefa...">&emsp;
+            <i title="Adicionar uma tarefa" onclick="addTask()" class="ri-add-line"></i>&ensp;<i title="Reiniciar"
+                onclick="reset()" class="ri-restart-line anime"></i>
+        </span>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
