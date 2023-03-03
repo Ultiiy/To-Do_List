@@ -18,4 +18,4 @@
 
 ## | Sobre ##
 
-<p></p>
+<p>Basicamente consiste em criar uma lista de afazeres diários, semanais ou mensais, para trazer mais organização para sua rotina e suas tarefas</p>
