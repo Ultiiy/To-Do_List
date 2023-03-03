@@ -5,9 +5,9 @@
 <h1 align="center">To Do List</h1>
 
 <div align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ultiiy/To-Do_List?color=56BEB8">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Ultiiy/To-Do_List?color=56BEB8">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Ultiiy/To-Do_List?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ultiiy/To-Do-List?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Ultiiy/To-Do-List?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Ultiiy/To-Do-List?color=56BEB8">
 </div><br>
 
 <div align="center">
