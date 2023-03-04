@@ -25,9 +25,13 @@ h1 {
 
 input[type="text"] {
     width: 60%;
-    padding: 12px 12px 6px 3px;
-    margin: 8px 0;
+    padding: 12px 12px 6px 2px;
+    margin: 8px;
     border-bottom: 2px solid black;
+}
+
+input[type="text"]:focus {
+    border: 0;
 }
 
 span {
@@ -37,15 +41,8 @@ span {
 }
 
 i {
-    display: flex;
-    align-items: center;
     cursor: pointer;
     font-size: 24px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 .anime:hover {
@@ -67,22 +64,16 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     margin: 12px;
     padding: 14px;
 }
 
-.line {
-    text-decoration: line-through;
-}
-
-.delete {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li i {
     font-size: 18px;
     transition: all 0.4s;
 }
 
-.delete:hover {
+li i:hover {
     color: red;
 }

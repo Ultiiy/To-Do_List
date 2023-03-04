@@ -1,53 +1,70 @@
 const taskInput = document.getElementById("newTask");
 const taskList = document.getElementById("taskList");
+let linhaAtravessada = false;
 
 taskInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
 
-        const newTaskText = taskInput.value;
-        if (newTaskText !== "") {
+        if (taskInput.value !== "") {
             const newTask = document.createElement("li");
-            newTask.textContent = newTaskText;
+            const task = document.createElement("p");
+            task.textContent = taskInput.value;
 
-            const excluir = document.createElement("i");
-            excluir.innerHTML = '<i class="ri-delete-bin-2-fill delete"></i>';
-            excluir.setAttribute("id", "delete");
+            const dellTask = document.createElement("i");
+            dellTask.classList.add("ri-delete-bin-2-fill");
 
-            excluir.addEventListener("click", function () {
+            dellTask.addEventListener("click", function () {
                 newTask.remove();
             });
 
-            newTask.appendChild(excluir);
-            taskList.appendChild(newTask);
+            newTask.addEventListener("click", function () {
+                linhaAtravessada = !linhaAtravessada;
+                if (linhaAtravessada) {
+                    task.style.textDecoration = 'line-through';
+                } else {
+                    task.style.textDecoration = 'none';
+                }
+            })
 
+            taskList.appendChild(newTask);
+            newTask.appendChild(task);
+            newTask.appendChild(dellTask);
             taskInput.value = "";
         }
     }
 });
 
 function addTask() {
-    const newTaskText = taskInput.value;
-    if (newTaskText === "") {
+    if (taskInput.value === "") {
         taskInput.style.borderColor = "red"
         setTimeout(() => {
             taskInput.style.borderColor = "black"
         }, 600);
     } else {
         const newTask = document.createElement("li");
-        newTask.textContent = newTaskText;
+        const task = document.createElement("p");
+        task.textContent = taskInput.value;
 
-        const excluir = document.createElement("i");
-        excluir.innerHTML = '<i class="ri-delete-bin-2-fill delete"></i>';
-        excluir.setAttribute("id", "delete");
+        const dellTask = document.createElement("i");
+        dellTask.classList.add("ri-delete-bin-2-fill");
 
-        excluir.addEventListener("click", function () {
+        dellTask.addEventListener("click", function () {
             newTask.remove();
         });
 
-        newTask.appendChild(excluir);
-        taskList.appendChild(newTask);
+        newTask.addEventListener("click", function () {
+            linhaAtravessada = !linhaAtravessada;
+            if (linhaAtravessada) {
+                task.style.textDecoration = 'line-through';
+            } else {
+                task.style.textDecoration = 'none';
+            }
+        })
 
+        taskList.appendChild(newTask);
+        newTask.appendChild(task);
+        newTask.appendChild(dellTask);
         taskInput.value = "";
     }
 }
@@ -80,7 +97,7 @@ function downloadPDF() {
             for (let i = 0; i < lixeira.length; i++) {
                 lixeira[i].style.display = "block";
             }
-        }, 600);
+        }, 1);
 
         html2pdf().from(document.body).save("To-Do List.pdf");
     }
