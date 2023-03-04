@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>To-Do List</title>
 </head>
@@ -13,10 +14,11 @@
 <body>
     <div class="container">
         <h1>To-Do List</h1>
-        <span>
+        <span id="icons">
             <input type="text" id="newTask" placeholder="Informe uma tarefa...">&emsp;
-            <i title="Adicionar uma tarefa" onclick="addTask()" class="ri-add-line"></i>&ensp;<i title="Reiniciar"
-                onclick="reset()" class="ri-restart-line anime"></i>
+            <i title="Adicionar uma tarefa" onclick="addTask()" class="ri-add-line"></i>&ensp;
+            <i title="Download" onclick="downloadPDF()" class="ri-download-2-line"></i>&ensp;
+            <i title="Reiniciar" onclick="reset()" class="ri-restart-line anime"></i>
         </span>
         <ul id="taskList"></ul>
     </div>

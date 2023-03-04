@@ -43,13 +43,23 @@ i {
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .anime:hover {
     animation: rotation 0.8s normal both;
 }
 
 @keyframes rotation {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(359deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 li {
@@ -58,13 +68,21 @@ li {
     justify-content: space-between;
     align-items: center;
     margin: 12px;
-    padding: 12px;
+    padding: 14px;
+}
+
+.line {
+    text-decoration: line-through;
 }
 
 .delete {
-    color: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4px;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+
+.delete:hover {
+    color: red;
 }
