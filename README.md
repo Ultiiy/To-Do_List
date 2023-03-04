@@ -1,8 +1,8 @@
 <div align="center"> 
-  <img src="https://media.discordapp.net/attachments/1063891503107285102/1081067912489607199/image.png">
+  <img src="https://media.discordapp.net/attachments/1063891503107285102/1081386053480497212/to-do_list.png?width=1179&height=609">
 </div>
 
-<h1 align="center">To Do List</h1>
+<h1 align="center">To-Do List</h1>
 
 <div align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ultiiy/To-Do-List?color=56BEB8">
@@ -18,4 +18,4 @@
 
 ## | Sobre ##
 
-<p>Basicamente consiste em criar uma lista de afazeres diários, semanais ou mensais, para trazer mais organização para sua rotina e suas tarefas</p>
+<p>Basicamente consiste em criar uma lista de afazeres diários, semanais ou mensais, para trazer mais organização para sua rotina e suas tarefas. Com a possibilidade de exportar os afazeres em PDF.</p>
