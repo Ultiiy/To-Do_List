@@ -7,6 +7,10 @@
     font-family: sans-serif;
 }
 
+html {
+    background-color: #ffff;
+}
+
 .container {
     max-width: 450px;
     margin: auto;
@@ -60,7 +64,7 @@ i {
 }
 
 li {
-    background-color: #f2f2f2;
+    background-color: #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
